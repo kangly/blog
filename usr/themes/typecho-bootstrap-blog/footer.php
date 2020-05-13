@@ -6,12 +6,18 @@
     <div class="row">
         <div class="col-md-12">
             <footer id="footer" role="contentinfo">
-                &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-                <?php if($this->options->postbirdIcp){ ?>
-                    <a target="_blank" href="//www.miitbeian.gov.cn"><?php $this->options->postbirdIcp(); ?></a> .
-                <?php }  ?>
-                <?php _e('由 <a href="http://www.typecho.org"  target="_blank">Typecho</a> 强力驱动'); ?>.
-                <?php _e('Theme by  <a href="http://www.ptbird.cn" target="_blank">Postbird</a>'); ?>.
+                <div class="mb-3" style="display: inline-block;">
+                    &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
+                    <?php if($this->options->postbirdIcp){ ?>
+                        <a target="_blank" href="//www.miitbeian.gov.cn"><?php $this->options->postbirdIcp(); ?></a> .
+                    <?php }  ?>
+                    <?php _e('由 <a href="http://www.typecho.org"  target="_blank">Typecho</a> 强力驱动'); ?>.
+                    <?php _e('Theme by  <a href="http://www.ptbird.cn" target="_blank">Postbird</a>'); ?>.
+                </div>
+                <div class="ml-5" style="display: inline-block;">
+                    <img src="/qrcode.jpg" width="150">
+                    <img class="ml-3" src="/miniprogram.png" width="150">
+                </div>
             </footer><!-- end #footer -->
         </div>
     </div>
